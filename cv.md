@@ -1,3 +1,5 @@
+![Image alt](https://github.com/Alexej-Ilyutik/rsschool-cv/raw/gh-pages/Foto.jpg)
+
 # Alexej Ilyutik
 
 # Contacts:
