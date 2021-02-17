@@ -16,7 +16,9 @@ body {
 .bold {
   font-weight: 700;
   font-size: 20px;
+  margin-top: 10px;
   text-transform: uppercase;
+  color: white;
 }
 
 .semi_bold {
@@ -52,8 +54,9 @@ body {
 }
 
 .info {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+  color: #b1eaff;
 }
 
 .contact {
@@ -62,4 +65,39 @@ body {
 
 .data {
   font-style: italic;
+}
+
+.info_skill {
+  padding: 25px 0;
+}
+
+.info_skill li {
+  color: #b1eaff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_name {
+  width: 25%;
+}
+
+.skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+  margin-top: .5em;
+}
+
+.skill_per {
+  width: 15%;
+}
+
+.skill_progress span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
 }
