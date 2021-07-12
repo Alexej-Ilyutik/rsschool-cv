@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     font-family: "Montserrat", sans-serif;
   }
 
   body {
     width: 80%;
-    margin: 150px auto;
+    margin: 20px auto;
   }
 
   header {
@@ -17,5 +16,38 @@
       background-color: rgb(31, 34, 43);
       display: flex;
       align-items: center;
+      position: relative;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+  }
+
+  figure img {
+      width: 200px;
+      height: auto;
+      border-radius: 15%;
+      position: absolute;
+      top: 50px;
+      left: 60px;
+      border: 5px solid white;
+      box-shadow: 3px 3px 10px gray;
+      cursor: pointer;
+      transition: .5s;
+      user-select: none;
   }
   
+  figure img:hover {
+    transform: scale(1.3);
+    box-shadow: 3px 3px 20px gray;
+  }
+
+  .header-text {
+    color: white;
+    width: 65%;
+    margin-left: auto;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-weight: semi-bold;
+    text-transform: uppercase;
+  }
