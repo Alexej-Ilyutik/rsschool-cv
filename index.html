@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <base target="_blank">
     <title>CV_Alexej_Ilyutik</title>
 </head>
 <body>
@@ -22,8 +23,8 @@
     </header>
     <main>
         <aside>
-
             <ul class="info">
+                <h2>contact:</h2>
               <li>
                 <h4>Country/City:</h4>
                 <div class="data">Belarus/Minsk</div>
@@ -87,18 +88,25 @@
                   </div>
                   <div class="skill_per">20%</div>
                 </li>
+                <li>
+                    <div class="skill_name">Git</div>
+                    <div class="skill_progress">
+                      <span style="width: 45%"></span>
+                    </div>
+                    <div class="skill_per">45%</div>
+                  </li>
               </ul>
             </div>
           </div>
         </aside>
         <article>
-          <div class="resume_about">
-            <div class="title">
-              <h2>Personal information:</h2>
+          <div class="resume_item resume_about">
+            <div class="title"> 
+              <h3>Personal information:</h3>
             </div>
-            <p class="semi_bold">Alexej, 34 years old.</p>
+            <p class="semi_bold">Alexej, 35 years old.</p>
             <p class="semi_bold">
-              Mechanical Engineer with 8+ years of experience in designing,
+              Mechanical Engineer with 9+ years of experience in designing,
               developing and maintaining mechanical systems and components, last
               2+ years the Team leader of design and engineering department.
             </p>
@@ -118,22 +126,35 @@
           </div>
           <div class="resume_item resume_code">
             <div class="title">
-              <h2>Code example:</h2>
+              <h3>Code example:</h3>
             </div>
             <p class="semi_bold">
               <a href="https://github.com/Alexej-Ilyutik/CPP-code-examples"
-                >C++ code</a
-              >
+                >C++ code</a>
             </p>
+            <p class="semi_bold">JS код:</p>
+            <p class="semi_bold">
+                <pre>
+     var isAnagram = function(test, original) {
+         let Test = test.toLowerCase().split('').sort().join('');
+         let Original = original.toLowerCase().split('').sort().join('');
+         if (Test === Original){
+           return true;
+         }else{
+           return false;
+         }
+      };    </pre>
+            </p>
+
           </div>
           <div class="resume_item resume_experience">
             <div class="title">
-              <h2>Proffessional experience:</h2>
+              <h3>Proffessional experience:</h3>
             </div>
           </div>
           <div class="resume_item resume_education">
             <div class="title">
-              <h2>Education:</h2>
+              <h3>Education:</h3>
             </div>
             <p class="semi_bold">
               <a href="https://en.bntu.by/"
@@ -143,7 +164,7 @@
           </div>
           <div class="resume_item resume_english">
             <div class="title">
-              <h2>English:</h2>
+              <h3>English:</h3>
             </div>
             <p class="semi_bold">
               A2. I am constantly developing my skills with the help of different
