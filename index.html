@@ -4,26 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <base target="_blank" />
+
     <title>CV_Alexej_Ilyutik</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <figure class="resume_foto">
         <img src="Foto.jpg" alt="foto_pic" />
       </figure>
       <div class="header-text">
         <h1>Alexej Ilyutik</h1>
       </div>
+      <div class="header_burger"></div>
+      <nav class="nav_menu">
+        <a href="#contact" class="nav_link">Contact</a>
+        <a href="#skills" class="nav_link">Skill's</a>
+        <a href="#info" class="nav_link">Personal information</a>
+        <a href="#code" class="nav_link">Code example</a>
+        <a href="#experience" class="nav_link">Proffessional experience</a>
+        <a href="#projects" class="nav_link">Projects</a>
+        <a href="#education" class="nav_link">Education</a>
+        <a href="#english" class="nav_link">English</a>
+      </nav>
     </header>
     <main>
       <aside>
-        <h2 class="contact">contact:</h2>
+        <h2 class="contact" id="contact">contact:</h2>
         <ul class="info">
           <li>
             <h4>Country/City:</h4>
@@ -58,7 +77,7 @@
           </li>
         </ul>
         <div class="resume_skills">
-          <h2 class="skillH2">skill's:</h2>
+          <h2 class="skillH2" id="skills">skill's:</h2>
           <ul class="info_skill">
             <li>
               <div class="skill_name">C++</div>
@@ -101,7 +120,7 @@
       <article>
         <div class="resume_item resume_about">
           <div class="title">
-            <h3>Personal information:</h3>
+            <h3 id="info">Personal information:</h3>
           </div>
           <p class="semi_bold">Alexej, 35 years old.</p>
           <p class="semi_bold">
@@ -125,7 +144,7 @@
         </div>
         <div class="resume_item resume_code">
           <div class="title">
-            <h3>Code example:</h3>
+            <h3 id="code">Code example:</h3>
           </div>
           <p class="semi_bold">
             <a href="https://github.com/Alexej-Ilyutik/CPP-code-examples"
@@ -133,27 +152,102 @@
             >
           </p>
           <p class="semi_bold">JS код:</p>
-          <pre class="semi_bold">
-                var isAnagram = function(test, original) {
-                    let Test = test.toLowerCase().split('').sort().join('');
-                    let Original = original.toLowerCase().split('').sort().join('');
-                    if (Test === Original){
-                      return true;
-                    }else{
-                      return false;
-                    }
-                 };    
-            </pre
-          >
+          <pre><code class="js">
+            var isAnagram = function(test, original) {
+              let Test = test.toLowerCase().split('').sort().join('');
+              let Original = original.toLowerCase().split('').sort().join('');
+              if (Test === Original){
+                return true;
+              }else{
+                return false;
+              }
+           };    
+          </code>       
+            </pre>
         </div>
         <div class="resume_item resume_experience">
           <div class="title">
-            <h3>Proffessional experience:</h3>
+            <h3 id="experience">Proffessional experience:</h3>
+            <p class="semi_bold">
+              Подготовительный курс «JavaScript/Front-end. Stage 0»:
+            </p>
+            <p class="semi_bold">
+              <a href="https://app.rs.school/certificate/dki5dmfg"
+                >CERTIFICATE OF COMPLETION</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="resume_item resume_experience">
+          <div class="title">
+            <h3 id="projects">Projects:</h3>
+          </div>
+          <div class="grid">
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q1/virtual-piano/"
+            >
+              <figure>
+                <img src="Virtual_Piano.jpg" alt="Virtual Piano" />
+                <figcaption>
+                  <div class="project-name">Virtual Piano</div>
+                  <div class="project-description">
+                    Virtual piano with keyboard control<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q1/wildlife/"
+            >
+              <figure>
+                <img src="WildLife.jpg" alt="WildLife" />
+                <figcaption>
+                  <div class="project-name">WildLife</div>
+                  <div class="project-description">
+                    Wildlife site<br />(HTML, CSS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFEPRESCHOOL/museum/"
+            >
+              <figure>
+                <img src="Museum.jpg" alt="Museum" />
+                <figcaption>
+                  <div class="project-name">Museum</div>
+                  <div class="project-description">
+                    Louvre museum project<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFEPRESCHOOL/js-clock/"
+            >
+              <figure>
+                <img src="Js-Clock.jpg" alt="Js-Clock" />
+                <figcaption>
+                  <div class="project-name">Js-Clock</div>
+                  <div class="project-description">
+                    Clock with light and dark theme<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
           </div>
         </div>
         <div class="resume_item resume_education">
           <div class="title">
-            <h3>Education:</h3>
+            <h3 id="education">Education:</h3>
           </div>
           <p class="semi_bold">
             <a href="https://en.bntu.by/"
@@ -163,7 +257,7 @@
         </div>
         <div class="resume_item resume_english">
           <div class="title">
-            <h3>English:</h3>
+            <h3 id="english">English:</h3>
           </div>
           <p class="semi_bold">
             A2. I am constantly developing my skills with the help of different
@@ -189,5 +283,6 @@
         <p>copyright &copy; 2021</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
