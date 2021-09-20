@@ -17,21 +17,32 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <base target="_blank" />
+
     <title>CV_Alexej_Ilyutik</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <figure class="resume_foto">
         <img src="Foto.jpg" alt="foto_pic" />
       </figure>
       <div class="header-text">
         <h1>Alexej Ilyutik</h1>
       </div>
+      <div class="header_burger"></div>
+      <nav class="nav_menu">
+        <a href="#contact" class="nav_link">Contact</a>
+        <a href="#skills" class="nav_link">Skill's</a>
+        <a href="#info" class="nav_link">Personal information</a>
+        <a href="#code" class="nav_link">Code example</a>
+        <a href="#experience" class="nav_link">Proffessional experience</a>
+        <a href="#projects" class="nav_link">Projects</a>
+        <a href="#education" class="nav_link">Education</a>
+        <a href="#english" class="nav_link">English</a>
+      </nav>
     </header>
     <main>
       <aside>
-        <h2 class="contact">contact:</h2>
+        <h2 class="contact" id="contact">contact:</h2>
         <ul class="info">
           <li>
             <h4>Country/City:</h4>
@@ -66,7 +77,7 @@
           </li>
         </ul>
         <div class="resume_skills">
-          <h2 class="skillH2">skill's:</h2>
+          <h2 class="skillH2" id="skills">skill's:</h2>
           <ul class="info_skill">
             <li>
               <div class="skill_name">C++</div>
@@ -109,7 +120,7 @@
       <article>
         <div class="resume_item resume_about">
           <div class="title">
-            <h3>Personal information:</h3>
+            <h3 id="info">Personal information:</h3>
           </div>
           <p class="semi_bold">Alexej, 35 years old.</p>
           <p class="semi_bold">
@@ -133,7 +144,7 @@
         </div>
         <div class="resume_item resume_code">
           <div class="title">
-            <h3>Code example:</h3>
+            <h3 id="code">Code example:</h3>
           </div>
           <p class="semi_bold">
             <a href="https://github.com/Alexej-Ilyutik/CPP-code-examples"
@@ -156,7 +167,7 @@
         </div>
         <div class="resume_item resume_experience">
           <div class="title">
-            <h3>Proffessional experience:</h3>
+            <h3 id="experience">Proffessional experience:</h3>
             <p class="semi_bold">
               Подготовительный курс «JavaScript/Front-end. Stage 0»:
             </p>
@@ -169,7 +180,7 @@
         </div>
         <div class="resume_item resume_experience">
           <div class="title">
-            <h3>Projects:</h3>
+            <h3 id="projects">Projects:</h3>
           </div>
           <div class="grid">
             <a
@@ -236,7 +247,7 @@
         </div>
         <div class="resume_item resume_education">
           <div class="title">
-            <h3>Education:</h3>
+            <h3 id="education">Education:</h3>
           </div>
           <p class="semi_bold">
             <a href="https://en.bntu.by/"
@@ -246,7 +257,7 @@
         </div>
         <div class="resume_item resume_english">
           <div class="title">
-            <h3>English:</h3>
+            <h3 id="english">English:</h3>
           </div>
           <p class="semi_bold">
             A2. I am constantly developing my skills with the help of different
@@ -272,5 +283,6 @@
         <p>copyright &copy; 2021</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
