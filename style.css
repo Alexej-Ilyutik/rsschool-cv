@@ -63,7 +63,7 @@ h1 {
   top: 20px;
   width: 35px;
   height: 35px;
-  background-image: url(/list.svg);
+  background-image: url(list.svg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
