@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
@@ -133,22 +141,97 @@
             >
           </p>
           <p class="semi_bold">JS код:</p>
-          <pre class="semi_bold">
-                var isAnagram = function(test, original) {
-                    let Test = test.toLowerCase().split('').sort().join('');
-                    let Original = original.toLowerCase().split('').sort().join('');
-                    if (Test === Original){
-                      return true;
-                    }else{
-                      return false;
-                    }
-                 };    
-            </pre
-          >
+          <pre><code class="js">
+            var isAnagram = function(test, original) {
+              let Test = test.toLowerCase().split('').sort().join('');
+              let Original = original.toLowerCase().split('').sort().join('');
+              if (Test === Original){
+                return true;
+              }else{
+                return false;
+              }
+           };    
+          </code>       
+            </pre>
         </div>
         <div class="resume_item resume_experience">
           <div class="title">
             <h3>Proffessional experience:</h3>
+            <p class="semi_bold">
+              Подготовительный курс «JavaScript/Front-end. Stage 0»:
+            </p>
+            <p class="semi_bold">
+              <a href="https://app.rs.school/certificate/dki5dmfg"
+                >CERTIFICATE OF COMPLETION</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="resume_item resume_experience">
+          <div class="title">
+            <h3>Projects:</h3>
+          </div>
+          <div class="grid">
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q1/virtual-piano/"
+            >
+              <figure>
+                <img src="Virtual_Piano.jpg" alt="Virtual Piano" />
+                <figcaption>
+                  <div class="project-name">Virtual Piano</div>
+                  <div class="project-description">
+                    Virtual piano with keyboard control<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q1/wildlife/"
+            >
+              <figure>
+                <img src="WildLife.jpg" alt="WildLife" />
+                <figcaption>
+                  <div class="project-name">WildLife</div>
+                  <div class="project-description">
+                    Wildlife site<br />(HTML, CSS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFEPRESCHOOL/museum/"
+            >
+              <figure>
+                <img src="Museum.jpg" alt="Museum" />
+                <figcaption>
+                  <div class="project-name">Museum</div>
+                  <div class="project-description">
+                    Louvre museum project<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFEPRESCHOOL/js-clock/"
+            >
+              <figure>
+                <img src="Js-Clock.jpg" alt="Js-Clock" />
+                <figcaption>
+                  <div class="project-name">Js-Clock</div>
+                  <div class="project-description">
+                    Clock with light and dark theme<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
           </div>
         </div>
         <div class="resume_item resume_education">
