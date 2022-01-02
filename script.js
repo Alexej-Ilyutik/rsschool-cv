@@ -1,3 +1,4 @@
+
 const NAV_MENU = document.querySelector(".nav_menu");
 const HEADER_BURGER = document.querySelector(".header_burger");
 const MENU_ITEM = document.querySelectorAll(".menu_item");
@@ -54,4 +55,5 @@ console.log(
 console.log("Содержание CV. " + "%c+30", "color: red");
 console.log("CV выполнено на английском языке. " + "%c+10", "color: red");
 console.log("%cВСЕГО: +130", "color: red");
+
 console.groupEnd();
