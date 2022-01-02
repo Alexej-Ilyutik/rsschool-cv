@@ -1,192 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <base target="_blank">
+
     <title>CV_Alexej_Ilyutik</title>
-</head>
-<body>
-    <header>
-        <figure class="resume_foto">
-            <img src="Foto.jpg" alt="foto_pic" />
-        </figure>
-        <div class="header-text">
-            <h1>Alexej Ilyutik</h1>
-        </div>
+  </head>
+  <body>
+    <header class="header">
+      <figure class="resume_foto">
+        <img src="Foto.jpg" alt="foto_pic" />
+      </figure>
+      <div class="header-text">
+        <h1>Alexej Ilyutik</h1>
+      </div>
+      <!-- <div class="header_burger"></div>
+      <nav class="nav_menu">
+        <a href="#contact" class="nav_link">Contact</a>
+        <a href="#skills" class="nav_link">Skill's</a>
+        <a href="#info" class="nav_link">Personal information</a>
+        <a href="#code" class="nav_link">Code example</a>
+        <a href="#experience" class="nav_link">Proffessional experience</a>
+        <a href="#projects" class="nav_link">Projects</a>
+        <a href="#education" class="nav_link">Education</a>
+        <a href="#english" class="nav_link">English</a>
+      </nav> -->
     </header>
     <main>
-        <aside>
-            <h2 class="contact">contact:</h2>
-            <ul class="info">
-              <li>
-                <h4>Country/City:</h4>
-                <div class="data">Belarus/Minsk</div>
-              </li>
-              <li>
-                <h4>Phone number:</h4>
-                <div class="data">+375(29)321-57-90</div>
-              </li>
-              <li>
-                <h4>Telegram/Viber:</h4>
-                <div class="data">+375(29)321-57-90</div>
-              </li>
-              <li>
-                <h4>Email:</h4>
-                <div class="data">alexej.ilyutik@gmail.com</div>
-              </li>
-              <li>
-                <h4>GitHub:</h4>
-                <div class="data">
-                  <a href="https://github.com/Alexej-Ilyutik">Alexej-Ilyutik</a>
-                </div>
-              </li>
-              <li>
-                <h4>LinkedIn:</h4>
-                <div class="data">
-                  <a
-                    href="https://www.linkedin.com/in/alexej-ilyutik?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfT2X9Fp4R6Kq6%2FTMafH8Uw%3D%3D"
-                    >alexej-ilyutik</a
-                  >
-                </div>
-              </li>
-            </ul>
-            <div class="resume_skills">
-              <h2 class="skillH2">skill's:</h2>
-              <ul class="info_skill">
-                <li>
-                  <div class="skill_name">C++</div>
-                  <div class="skill_progress">
-                    <span style="width: 15%"></span>
-                  </div>
-                  <div class="skill_per">15%</div>
-                </li>
-                <li>
-                  <div class="skill_name">HTML</div>
-                  <div class="skill_progress">
-                    <span style="width: 40%"></span>
-                  </div>
-                  <div class="skill_per">40%</div>
-                </li>
-                <li>
-                  <div class="skill_name">CSS</div>
-                  <div class="skill_progress">
-                    <span style="width: 40%"></span>
-                  </div>
-                  <div class="skill_per">40%</div>
-                </li>
-                <li>
-                  <div class="skill_name">JS</div>
-                  <div class="skill_progress">
-                    <span style="width: 20%"></span>
-                  </div>
-                  <div class="skill_per">20%</div>
-                </li>
-                <li>
-                    <div class="skill_name">Git</div>
-                    <div class="skill_progress">
-                      <span style="width: 45%"></span>
-                    </div>
-                    <div class="skill_per">45%</div>
-                  </li>
-              </ul>
+      <aside>
+        <h2 class="contact" id="contact">contact:</h2>
+        <ul class="info">
+          <li>
+            <h4>Country/City:</h4>
+            <div class="data">Belarus/Minsk</div>
+          </li>
+          <li>
+            <h4>Phone number:</h4>
+            <div class="data">+375(29)321-57-90</div>
+          </li>
+          <li>
+            <h4>Telegram/Viber:</h4>
+            <div class="data">+375(29)321-57-90</div>
+          </li>
+          <li>
+            <h4>Email:</h4>
+            <div class="data">alexej.ilyutik@gmail.com</div>
+          </li>
+          <li>
+            <h4>GitHub:</h4>
+            <div class="data">
+              <a href="https://github.com/Alexej-Ilyutik">Alexej-Ilyutik</a>
             </div>
-        </aside>
-        <article>
-          <div class="resume_item resume_about">
-            <div class="title"> 
-              <h3>Personal information:</h3>
+          </li>
+          <li>
+            <h4>LinkedIn:</h4>
+            <div class="data">
+              <a
+                href="https://www.linkedin.com/in/alexej-ilyutik?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfT2X9Fp4R6Kq6%2FTMafH8Uw%3D%3D"
+                >alexej-ilyutik</a
+              >
             </div>
-            <p class="semi_bold">Alexej, 35 years old.</p>
-            <p class="semi_bold">
-              Mechanical Engineer with 9+ years of experience in designing,
-              developing and maintaining mechanical systems and components, last
-              2+ years the Team leader of design and engineering department.
-            </p>
-            <p class="semi_bold">
-              I have 3+ years of experience as the Head of my own touristic
-              agency.
-            </p>
-            <p class="semi_bold">
-              Seeking to leverage my logical abilities and experience in the IT
-              sphere.
-            </p>
-            <p class="semi_bold">
-              Now I am at the elementary stage of studying programming. But I’m
-              sure my experience can help me to achieve the goal of becoming a
-              professional in this sphere.
-            </p>
+          </li>
+        </ul>
+        <div class="resume_skills">
+          <h2 class="skillH2" id="skills">skill's:</h2>
+          <ul class="info_skill">
+            <li>
+              <div class="skill_name">C++</div>
+              <div class="skill_progress">
+                <span style="width: 15%"></span>
+              </div>
+              <div class="skill_per">15%</div>
+            </li>
+            <li>
+              <div class="skill_name">HTML</div>
+              <div class="skill_progress">
+                <span style="width: 70%"></span>
+              </div>
+              <div class="skill_per">70%</div>
+            </li>
+            <li>
+              <div class="skill_name">CSS</div>
+              <div class="skill_progress">
+                <span style="width: 70%"></span>
+              </div>
+              <div class="skill_per">70%</div>
+            </li>
+            <li>
+              <div class="skill_name">JS</div>
+              <div class="skill_progress">
+                <span style="width: 50%"></span>
+              </div>
+              <div class="skill_per">50%</div>
+            </li>
+            <li>
+              <div class="skill_name">Node</div>
+              <div class="skill_progress">
+                <span style="width: 30%"></span>
+              </div>
+              <div class="skill_per">30%</div>
+            </li>
+            <li>
+              <div class="skill_name">Git</div>
+              <div class="skill_progress">
+                <span style="width: 75%"></span>
+              </div>
+              <div class="skill_per">75%</div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="resume_item resume_about">
+          <div class="title">
+            <h3 id="info">Personal information:</h3>
           </div>
-          <div class="resume_item resume_code">
-            <div class="title">
-              <h3>Code example:</h3>
-            </div>
-            <p class="semi_bold">
-              <a href="https://github.com/Alexej-Ilyutik/CPP-code-examples"
-                >C++ code</a>
-            </p>
-            <p class="semi_bold">JS код:</p>
-            <pre class="semi_bold">
-                var isAnagram = function(test, original) {
-                    let Test = test.toLowerCase().split('').sort().join('');
-                    let Original = original.toLowerCase().split('').sort().join('');
-                    if (Test === Original){
-                      return true;
-                    }else{
-                      return false;
-                    }
-                 };    
+          <p class="semi_bold">Alexej, 35 years old.</p>
+          <p class="semi_bold">
+            Mechanical Engineer with 9+ years of experience in designing,
+            developing and maintaining mechanical systems and components, last
+            2+ years the Team leader of design and engineering department.
+          </p>
+          <p class="semi_bold">
+            I have 3+ years of experience as the Head of my own touristic
+            agency.
+          </p>
+          <p class="semi_bold">
+            Seeking to leverage my logical abilities and experience in the IT
+            sphere.
+          </p>
+          <p class="semi_bold">
+            Now I am at the elementary stage of studying programming. But I’m
+            sure my experience can help me to achieve the goal of becoming a
+            professional in this sphere.
+          </p>
+        </div>
+        <!-- <div class="resume_item resume_code">
+          <div class="title">
+            <h3 id="code">Code example:</h3>
+          </div>
+          <p class="semi_bold">
+            <a href="https://github.com/Alexej-Ilyutik/CPP-code-examples"
+              >C++ code</a
+            >
+          </p>
+          <p class="semi_bold">JS код:</p>
+          <pre><code class="js">
+            var isAnagram = function(test, original) {
+              let Test = test.toLowerCase().split('')<br>.sort().join('');
+              let Original = original.toLowerCase().split('')<br>.sort().join('');
+              if (Test === Original){
+                return true;
+              }else{
+                return false;
+              }
+           };    
+          </code>       
             </pre>
-          </div>
-          <div class="resume_item resume_experience">
-            <div class="title">
-              <h3>Proffessional experience:</h3>
-            </div>
-          </div>
-          <div class="resume_item resume_education">
-            <div class="title">
-              <h3>Education:</h3>
-            </div>
+        </div> -->
+        <div class="resume_item resume_experience">
+          <div class="title">
+            <h3 id="experience">Proffessional experience:</h3>
             <p class="semi_bold">
-              <a href="https://en.bntu.by/"
-                >Belarusian National Technical University</a
-              >; Mechanical Engineering Faculty (2004-2009)
+              Подготовительный курс «JavaScript/Front-end. Stage 0»:
+            </p>
+            <p class="semi_bold">
+              <a href="https://app.rs.school/certificate/dki5dmfg"
+                >CERTIFICATE OF COMPLETION</a
+              >
             </p>
           </div>
-          <div class="resume_item resume_english">
-            <div class="title">
-              <h3>English:</h3>
-            </div>
-            <p class="semi_bold">
-              A2. I am constantly developing my skills with the help of different
-              online courses.
-            </p>
+        </div>
+        <div class="resume_item resume_experience">
+          <div class="title">
+            <h3 id="projects">Projects:</h3>
           </div>
-        </article>
-      </main>
-     <footer class="footer">
-       <div class="container">
-         <div class="icon">
-           <a href="https://github.com/Alexej-Ilyutik">
+          <div class="grid">
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q3/momentum/"
+            >
+              <figure>
+                <img src="Momentum.jpg" alt="Momentum" />
+                <figcaption>
+                  <div class="project-name">Momentum</div>
+                  <div class="project-description">
+                    Momentum(Player, Time, Date, ToDo, Weather, Language)<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://alexej-ilyutik.github.io/cssMemSlider/cssMemSlider/"
+            >
+              <figure>
+                <img src="Slider_HTML+CSS.jpg" alt="Slider" />
+                <figcaption>
+                  <div class="project-name">Slider</div>
+                  <div class="project-description">
+                    Slider HTML+CSS<br />(HTML, CSS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q3/museum-dom/"
+            >
+              <figure>
+                <img src="Museum.jpg" alt="Museum" />
+                <figcaption>
+                  <div class="project-name">Museum</div>
+                  <div class="project-description">
+                    Louvre museum project<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="grid-block"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFEPRESCHOOL/js-clock/"
+            >
+              <figure>
+                <img src="Js-Clock.jpg" alt="Js-Clock" />
+                <figcaption>
+                  <div class="project-name">Js-Clock</div>
+                  <div class="project-description">
+                    Clock with light and dark theme<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="resume_item resume_education">
+          <div class="title">
+            <h3 id="education">Education:</h3>
+          </div>
+          <p class="semi_bold">
+            <a href="https://en.bntu.by/"
+              >Belarusian National Technical University</a
+            >; Mechanical Engineering Faculty (2004-2009)
+          </p>
+        </div>
+        <div class="resume_item resume_english">
+          <div class="title">
+            <h3 id="english">English:</h3>
+          </div>
+          <p class="semi_bold">
+            A2. I am constantly developing my skills with the help of different
+            online courses.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="icon">
+          <a href="https://github.com/Alexej-Ilyutik">
             <img src="github.svg" width="35" alt="GitHub"
-            /></a>
-         </div>
-         <div class="icon">
-           <a href="https://rs.school/js/"
-             ><img src="rs_school_js.svg" width="90" alt="RS School"
-           /></a>
-         </div>
-       </div>
-       <div class="footer_bottom">
-         <p>copyright &copy; 2021</p>
-       </div>
-     </footer>
-    
-</body>
+          /></a>
+        </div>
+        <div class="icon">
+          <a href="https://rs.school/js/"
+            ><img src="rs_school_js.svg" width="90" alt="RS School"
+          /></a>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>copyright &copy; 2021</p>
+      </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>
