@@ -1,11 +1,24 @@
-const navMenu = document.querySelector(".nav_menu");
-const headerBurger = document.querySelector(".header_burger");
+const NAV_MENU = document.querySelector(".nav_menu");
+const HEADER_BURGER = document.querySelector(".header_burger");
+const MENU_ITEM = document.querySelectorAll(".menu_item");
+
+MENU_ITEM.forEach((ITEM) => {
+  ITEM.addEventListener("click", () => {
+    if (HEADER_BURGER.classList.contains("_active")) {
+      document.body.classList.remove("_lock");
+      NAV_MENU.classList.remove("_active");
+      HEADER_BURGER.classList.remove("_active");
+    }
+  });
+});
 
 const openBurger = () => {
-  navMenu.classList.toggle("open-burger");
+  document.body.classList.toggle("_lock");
+  NAV_MENU.classList.toggle("_active");
+  HEADER_BURGER.classList.toggle("_active");
 };
 
-headerBurger.addEventListener("click", openBurger);
+HEADER_BURGER.addEventListener("click", openBurger);
 
 console.group("%cCV", "color: red");
 console.log("Вёрстка валидная. " + "%c+10", "color: red");
