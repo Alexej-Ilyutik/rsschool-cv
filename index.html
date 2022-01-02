@@ -22,23 +22,37 @@
   </head>
   <body>
     <header class="header">
+      <div class="header_menu">
+        <nav class="nav_menu">
+          <ul class="menu_list">
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#contact" class="nav_link">Contact</a>
+            </li>
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#skills" class="nav_link">Skill's</a>
+            </li>
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#info" class="nav_link">Personal info</a>
+            </li>
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#code" class="nav_link">Code example</a>
+            </li>
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#experience" class="nav_link">Experience</a>
+            </li>
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#projects" class="nav_link">Projects</a>
+            </li>
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#education" class="nav_link">Education</a>
+            </li>
+            <li class="menu_item"><span class="menu_arrow"></span><a href="#english" class="nav_link">English</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_burger">
+          <span></span>
+        </div>
+      </div>
       <figure class="resume_foto">
         <img src="Foto.jpg" alt="foto_pic" />
       </figure>
       <div class="header-text">
         <h1>Alexej Ilyutik</h1>
       </div>
-      <!-- <div class="header_burger"></div>
-      <nav class="nav_menu">
-        <a href="#contact" class="nav_link">Contact</a>
-        <a href="#skills" class="nav_link">Skill's</a>
-        <a href="#info" class="nav_link">Personal information</a>
-        <a href="#code" class="nav_link">Code example</a>
-        <a href="#experience" class="nav_link">Proffessional experience</a>
-        <a href="#projects" class="nav_link">Projects</a>
-        <a href="#education" class="nav_link">Education</a>
-        <a href="#english" class="nav_link">English</a>
-      </nav> -->
     </header>
     <main>
       <aside>
@@ -121,6 +135,13 @@
               </div>
               <div class="skill_per">75%</div>
             </li>
+            <li>
+              <div class="skill_name">TS</div>
+              <div class="skill_progress">
+                <span style="width: 25%"></span>
+              </div>
+              <div class="skill_per">25%</div>
+            </li>
           </ul>
         </div>
       </aside>
@@ -149,7 +170,7 @@
             professional in this sphere.
           </p>
         </div>
-        <!-- <div class="resume_item resume_code">
+        <div class="resume_item resume_code">
           <div class="title">
             <h3 id="code">Code example:</h3>
           </div>
@@ -159,31 +180,34 @@
             >
           </p>
           <p class="semi_bold">JS код:</p>
-          <pre><code class="js">
-            var isAnagram = function(test, original) {
-              let Test = test.toLowerCase().split('')<br>.sort().join('');
-              let Original = original.toLowerCase().split('')<br>.sort().join('');
-              if (Test === Original){
-                return true;
-              }else{
-                return false;
+          <pre>
+            <code class="js">
+              function vowelOne(s){
+                  let str="";
+                  for(let i=0; i < s.length; i++){
+                      if((/^[aeiou]$/i).test(s[i])){
+                          str=str.concat("1");
+                      }else{
+                          str=str.concat("0");
+                      }   
+                  }
+                  return str;
               }
-           };    
-          </code>       
-            </pre>
-        </div> -->
+            </code>       
+          </pre>
+        </div>
         <div class="resume_item resume_experience">
           <div class="title">
-            <h3 id="experience">Proffessional experience:</h3>
-            <p class="semi_bold">
-              Подготовительный курс «JavaScript/Front-end. Stage 0»:
-            </p>
-            <p class="semi_bold">
-              <a href="https://app.rs.school/certificate/dki5dmfg"
-                >CERTIFICATE OF COMPLETION</a
-              >
-            </p>
+            <h3 id="experience">Professional experience:</h3>
           </div>
+          <p class="semi_bold">
+            Подготовительный курс «JavaScript/Front-end. Stage 0»:
+          </p>
+          <p class="semi_bold">
+            <a href="https://app.rs.school/certificate/dki5dmfg"
+              >CERTIFICATE OF COMPLETION</a
+            >
+          </p>
         </div>
         <div class="resume_item resume_experience">
           <div class="title">
@@ -200,7 +224,8 @@
                 <figcaption>
                   <div class="project-name">Momentum</div>
                   <div class="project-description">
-                    Momentum(Player, Time, Date, ToDo, Weather, Language)<br />(HTML, CSS, JS)
+                    Momentum(Player, Time, Date, ToDo, Weather, Language)<br />(HTML,
+                    CSS, JS)
                   </div>
                 </figcaption>
               </figure>
@@ -287,9 +312,9 @@
         </div>
       </div>
       <div class="footer_bottom">
-        <p>copyright &copy; 2021</p>
+        <p>copyright &copy; 2022</p>
       </div>
     </footer>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
