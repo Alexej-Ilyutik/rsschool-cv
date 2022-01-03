@@ -8,6 +8,7 @@
 
 body {
   max-width: 1000px;
+  min-width: 320px;
   margin: 15px auto;
   padding: 0 15px;
 }
@@ -96,7 +97,7 @@ li {
 }
 
 h1 {
-  font-size: calc(34px + 10 * (100vw / 900));
+  font-size: calc(30px + 10 * (100vw / 900));
   font-weight: semi-bold;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -468,7 +469,7 @@ pre {
   }
 
   h1 {
-    font-size: calc(20px + 20 * (100vw / 1000));
+    font-size: calc(16px + 20 * (100vw / 1000));
   }
 
   .header-text {
