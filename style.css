@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  max-width: 1000px;
+  max-width: 1200px;
   min-width: 320px;
   margin: 15px auto;
   padding: 0 15px;
@@ -49,7 +49,7 @@ body._lock {
 }
 
 .nav_link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #fff;
@@ -61,7 +61,7 @@ body._lock {
   transition: 0.3s;
 }
 
-.menu_arrow{
+.menu_arrow {
   display: none;
 }
 
@@ -110,7 +110,7 @@ main {
 }
 
 aside {
-  width: 30%;
+  width: 32%;
   background-color: lightgrey;
   text-align: left;
   padding: 0 30px;
@@ -118,6 +118,7 @@ aside {
 
 .info {
   margin-top: 10px;
+  margin-left: 10px;
   border-bottom: 2px solid rgb(45, 52, 71);
 }
 
@@ -168,7 +169,7 @@ h4 {
 }
 
 .skill_progress {
-  width: 55%;
+  width: 60%;
   margin: 0 5px;
   height: 5px;
   background: #dde7eb;
@@ -177,7 +178,7 @@ h4 {
 }
 
 .skill_per {
-  width: 15%;
+  width: 10%;
 }
 
 .skill_progress span {
@@ -189,7 +190,7 @@ h4 {
 }
 
 article {
-  width: 70%;
+  width: 68%;
   padding: 25px 45px 25px 45px;
   border-right: 5px solid rgb(57, 69, 100);
 }
@@ -219,32 +220,32 @@ pre {
   padding-bottom: 20px;
 }
 
-.grid {
+.flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.grid a {
+.flex a {
   position: relative;
-  margin: 20px 0;
+  margin: 15px 50px;
   cursor: pointer;
 }
 
-.grid a,
-.grid img,
-.grid figcaption {
+.flex a,
+.flex img,
+.flex figcaption {
   width: 240px;
-  height: 150px;
+  height: 180px;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.grid > a img {
+.flex > a img {
   object-fit: cover;
 }
 
-.grid figcaption {
+.flex figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -260,11 +261,11 @@ pre {
   transition: 0.4s;
 }
 
-.grid > a:hover figcaption {
+.flex > a:hover figcaption {
   transform: translateY(0%);
 }
 
-.grid figcaption > div {
+.flex figcaption > div {
   text-align: center;
 }
 
@@ -331,7 +332,7 @@ pre {
     margin-right: 12px;
   }
 
-  .grid {
+  .flex {
     justify-content: center;
   }
 }
@@ -356,13 +357,13 @@ pre {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 15vw 30px;
-    transition: left .3s ease 0s;
+    transition: left 0.3s ease 0s;
     overflow: auto;
   }
 
-   .nav_menu._active{
-     left: 15px;
-   }
+  .nav_menu._active {
+    left: 15px;
+  }
 
   .menu_list {
     flex-direction: column;
@@ -370,18 +371,17 @@ pre {
     gap: 5vh;
   }
 
-  .menu_list li{
+  .menu_list li {
     display: flex;
     align-items: center;
   }
 
-   .nav_link {
+  .nav_link {
     font-weight: 500;
     font-size: 24px;
-    
   }
 
-  .menu_arrow{
+  .menu_arrow {
     display: block;
     width: 0;
     height: 0;
@@ -400,7 +400,7 @@ pre {
     width: 8vw;
     height: 6vw;
     cursor: pointer;
-    background-color: rgba(45, 52, 71, .5);
+    background-color: rgba(45, 52, 71, 0.5);
     border-radius: 4px;
   }
 
@@ -410,17 +410,17 @@ pre {
     position: absolute;
     height: 0.6vw;
     width: 80%;
-    left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     transition: all 0.3s ease 0s;
     background-color: #fff;
   }
 
   .header_burger::before,
   .header_burger::after {
-    content: "";
+    content: '';
   }
 
   .header_burger::before {
@@ -436,16 +436,16 @@ pre {
     transform: scale(1) translate(0, -50%);
   }
 
-  .header_burger._active span{
+  .header_burger._active span {
     transform: scale(0) translate(0, -50%);
   }
 
-  .header_burger._active::before{
+  .header_burger._active::before {
     top: 49%;
     transform: rotate(-45deg) translate(0, -50%);
   }
 
-  .header_burger._active::after{
+  .header_burger._active::after {
     bottom: 49%;
     transform: rotate(45deg) translate(0, 50%);
   }
@@ -498,11 +498,10 @@ pre {
     width: 60%;
   }
 
-
-  .grid {
+  .flex {
     flex-direction: column;
   }
-  .grid a {
+  .flex a {
     margin: 20px auto;
   }
 
