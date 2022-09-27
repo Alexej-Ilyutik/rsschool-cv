@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
@@ -39,10 +31,6 @@
             </li>
             <li class="menu_item">
               <span class="menu_arrow"></span
-              ><a href="#code" class="nav_link">Code example</a>
-            </li>
-            <li class="menu_item">
-              <span class="menu_arrow"></span
               ><a href="#experience" class="nav_link">Experience</a>
             </li>
             <li class="menu_item">
@@ -64,7 +52,7 @@
         </div>
       </div>
       <figure class="resume_foto">
-        <img src="Foto.jpg" alt="foto_pic" />
+        <img src="./assets/img/Foto.jpg" alt="foto_pic" />
       </figure>
       <div class="header-text">
         <h1>Alexej Ilyutik</h1>
@@ -130,6 +118,13 @@
               </div>
               <div class="skill_per">70%</div>
             </li>
+             <li>
+              <div class="skill_name">SCSS</div>
+              <div class="skill_progress">
+                <span style="width: 70%"></span>
+              </div>
+              <div class="skill_per">70%</div>
+            </li>
             <li>
               <div class="skill_name">JS</div>
               <div class="skill_progress">
@@ -140,9 +135,9 @@
             <li>
               <div class="skill_name">Node</div>
               <div class="skill_progress">
-                <span style="width: 30%"></span>
+                <span style="width: 20%"></span>
               </div>
-              <div class="skill_per">30%</div>
+              <div class="skill_per">20%</div>
             </li>
             <li>
               <div class="skill_name">Git</div>
@@ -157,6 +152,13 @@
                 <span style="width: 25%"></span>
               </div>
               <div class="skill_per">25%</div>
+            </li>
+             <li>
+              <div class="skill_name">Figma</div>
+              <div class="skill_progress">
+                <span style="width: 75%"></span>
+              </div>
+              <div class="skill_per">75%</div>
             </li>
           </ul>
         </div>
@@ -186,32 +188,7 @@
             professional in this sphere.
           </p>
         </div>
-        <div class="resume_item resume_code">
-          <div class="title">
-            <h3 id="code">Code example:</h3>
-          </div>
-          <p class="semi_bold">
-            <a href="https://github.com/Alexej-Ilyutik/CPP-code-examples"
-              >C++ code</a
-            >
-          </p>
-          <p class="semi_bold">JS код:</p>
-          <pre>
-            <code class="js">
-              function vowelOne(s){
-                  let str="";
-                  for(let i=0; i &lt; s.length; i++){
-                      if((/^[aeiou]$/i).test(s[i])){
-                          str=str.concat("1");
-                      }else{
-                          str=str.concat("0");
-                      }   
-                  }
-                  return str;
-              }
-            </code>       
-          </pre>
-        </div>
+       
         <div class="resume_item resume_experience">
           <div class="title">
             <h3 id="experience">Professional experience:</h3>
@@ -233,14 +210,14 @@
             <a
               class="grid-block"
               target="_blank"
-              href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q3/momentum/"
+              href="https://alexej-ilyutik.github.io/currency-converter/converter/"
             >
               <figure>
-                <img src="Momentum.jpg" alt="Momentum" />
+                <img src="./assets/img/Converter.jpg" alt="Currency Converter" />
                 <figcaption>
-                  <div class="project-name">Momentum</div>
+                  <div class="project-name">Currency Converter</div>
                   <div class="project-description">
-                    Momentum(Player, Time, Date, ToDo, Weather, Language)<br />(HTML,
+                    Currency Converter<br />(HTML,
                     CSS, JS)
                   </div>
                 </figcaption>
@@ -252,7 +229,7 @@
               href="https://alexej-ilyutik.github.io/cssMemSlider/cssMemSlider/"
             >
               <figure>
-                <img src="Slider_HTML+CSS.jpg" alt="Slider" />
+                <img src="./assets/img/Slider_HTML+CSS.jpg" alt="Slider" />
                 <figcaption>
                   <div class="project-name">Slider</div>
                   <div class="project-description">
@@ -267,7 +244,7 @@
               href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFE2021Q3/museum-dom/"
             >
               <figure>
-                <img src="Museum.jpg" alt="Museum" />
+                <img src="./assets/img/Museum.jpg" alt="Museum" />
                 <figcaption>
                   <div class="project-name">Museum</div>
                   <div class="project-description">
@@ -282,11 +259,41 @@
               href="https://rolling-scopes-school.github.io/alexej-ilyutik-JSFEPRESCHOOL/js-clock/"
             >
               <figure>
-                <img src="Js-Clock.jpg" alt="Js-Clock" />
+                <img src="./assets/img/Js-Clock.jpg" alt="Js-Clock" />
                 <figcaption>
                   <div class="project-name">Js-Clock</div>
                   <div class="project-description">
                     Clock with light and dark theme<br />(HTML, CSS, JS)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+             <a
+              class="grid-block"
+              target="_blank"
+              href="https://alexej-ilyutik.github.io/Slider-swiper/task-carousel/"
+            >
+              <figure>
+                <img src="./assets/img/Slider-Swiper.jpg" alt="Slider-Swiper" />
+                <figcaption>
+                  <div class="project-name">Slider-Swiper</div>
+                  <div class="project-description">
+                    Infinite Slider-Swiper<br />(Webpack, scss, adaptive, swipes, scroll)
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+             <a
+              class="grid-block"
+              target="_blank"
+              href="https://transcendent-selkie-684eb9.netlify.app/"
+            >
+              <figure>
+                <img src="./assets/img/GitHub-finder.jpg" alt="GitHub Finder" />
+                <figcaption>
+                  <div class="project-name">GitHub Finder</div>
+                  <div class="project-description">
+                    GitHub Finder App<br />(React, API, SCSS)
                   </div>
                 </figcaption>
               </figure>
@@ -318,12 +325,12 @@
       <div class="container">
         <div class="icon">
           <a href="https://github.com/Alexej-Ilyutik" target="_blank">
-            <img src="github.svg" width="35" alt="GitHub"
+            <img src="./assets/svg/github.svg" width="35" alt="GitHub"
           /></a>
         </div>
         <div class="icon">
           <a href="https://rs.school/js/" target="_blank"
-            ><img src="rs_school_js.svg" width="90" alt="RS School"
+            ><img src="./assets/svg/rs_school_js.svg" width="90" alt="RS School"
           /></a>
         </div>
       </div>
