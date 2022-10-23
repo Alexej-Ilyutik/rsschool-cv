@@ -211,6 +211,10 @@ h3 {
   padding-left: 25px;
 }
 
+.semi_bold span{
+  font-weight: 700;
+}
+
 pre {
   font-weight: 400;
   height: 255px;
